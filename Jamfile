@@ -12,7 +12,7 @@ import virtual-target ;
 BOOST_ROOT = [ modules.peek : BOOST_ROOT ] ;
 CXXFLAGS = [ modules.peek : CXXFLAGS ] ;
 LDFLAGS = [ modules.peek : LDFLAGS ] ;
-
+CXXFLAGS += "-std=c++11" ;
 ECHO "CXXFLAGS =" $(CXXFLAGS) ;
 ECHO "LDFLAGS =" $(LDFLAGS) ;
 ECHO "OS =" [ os.name ] ;
